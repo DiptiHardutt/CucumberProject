@@ -1,0 +1,228 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1717042300,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is on the codefios login page",
+            "match": {
+              "location": "steps.StepDefinition.user_is_on_the_codefios_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 642944300,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User enters \"username\" from mysql database",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"username\"",
+                  "offset": 12
+                }
+              ],
+              "location": "steps.StepDefinition.userEntersFromMysqlDatabase(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 430055700,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User enters \"password\" from mysql database",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"password\"",
+                  "offset": 12
+                }
+              ],
+              "location": "steps.StepDefinition.userEntersFromMysqlDatabase(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 8108629700,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User clicks on sign in button",
+            "match": {
+              "location": "steps.StepDefinition.user_clicks_on_sign_in_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 190836600,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User should be able to land on dashboard page",
+            "match": {
+              "location": "steps.StepDefinition.user_should_be_able_to_land_on_dashboard_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-01-09T23:09:26.998Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1088672900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.StepDefinition.beforeRun()"
+            }
+          }
+        ],
+        "line": 13,
+        "name": "User shouldbe able to Add account from List Account Page",
+        "description": "",
+        "id": "codefios-add-account-functionality-from-list-account;user-shouldbe-able-to-add-account-from-list-account-page",
+        "after": [
+          {
+            "result": {
+              "duration": 149925300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.StepDefinition.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1711175100,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User clicks on List Account button",
+            "match": {
+              "location": "steps.StepDefinition.user_clicks_on_List_Account_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 62637800,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User should be able to land on List Account page",
+            "match": {
+              "location": "steps.StepDefinition.user_should_be_able_to_land_on_List_Account_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 39590300,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User clicks on Add Account button",
+            "match": {
+              "location": "steps.StepDefinition.user_clicks_on_Add_Account_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 567940400,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User should be able to navigate to New Account window",
+            "match": {
+              "location": "steps.StepDefinition.user_should_be_able_to_navigate_to_New_Account_window()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 288690400,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User fill all the required information",
+            "match": {
+              "location": "steps.StepDefinition.user_fill_all_the_required_information()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2042005000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "User clicks on the save button",
+            "match": {
+              "location": "steps.StepDefinition.user_clicks_on_the_save_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 319411900,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "User should be able to add new account",
+            "match": {
+              "location": "steps.StepDefinition.user_should_be_able_to_add_new_account()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@AddAccountFeature"
+          },
+          {
+            "name": "@AddAccount"
+          }
+        ]
+      }
+    ],
+    "name": "Codefios Add Account functionality from List Account",
+    "description": "",
+    "id": "codefios-add-account-functionality-from-list-account",
+    "keyword": "Feature",
+    "uri": "classpath:features/AddAccountFromList.feature",
+    "tags": [
+      {
+        "name": "@AddAccountFeature",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
