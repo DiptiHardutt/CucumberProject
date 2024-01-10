@@ -15,7 +15,7 @@ public class DatabasePage {
 	ArrayList<String> columnValueList;
 	
 	
-	public String getDataFromDatabase(String columnName) {
+	public String getDataFromDatabase(String columnName,String sqlQuery) {
 		//com.mysql.cj.jdbc.Driver call the driver (jdbc connector)
 		try {
 			
@@ -26,7 +26,7 @@ public class DatabasePage {
 			
 			String sqlUsername = "student";
 			String sqlPassword = "Student@123";
-			String sqlQuery = "SELECT * FROM login_data WHERE user_id=1;";
+		//	sqlQuery = "SELECT * FROM login_data WHERE user_id=1;";
 			
 		//create a connection to DB	
 			connection = DriverManager.getConnection(sqlUrl, sqlUsername, sqlPassword);

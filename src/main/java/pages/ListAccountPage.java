@@ -82,7 +82,7 @@ public class ListAccountPage extends TestBase{
 	String afterXpath = "]/td[2]";
 	String afterXpathnum="]/td[3]";
 	String afterXpathButton ="]//button[1]";
-	public void searchForNameAndAccount() {
+	public String searchForNameAndAccount() {
 		waitForElement(accountListDashboardPage);
 //		System.out.println("In search for name and account");
 		int size = tableRows.size();
@@ -94,12 +94,14 @@ public class ListAccountPage extends TestBase{
 			String actualAccountNum=driver.findElement(By.xpath(beforeXpath+i+afterXpathnum)).getText();
 		if(actualName.contains(insertedAccountname)&& actualAccountNum.contains(insertedAccNum)) {
 			System.out.println("account exist");
-			driver.findElement(By.xpath(beforeXpath+i+afterXpathButton)).click();
-			yesButton.click();
+			//to delete account
+//			driver.findElement(By.xpath(beforeXpath+i+afterXpathButton)).click();
+//			yesButton.click();
 			break;
 		}
 	
 		}
+		return insertedAccNum;
 		
 	}
 

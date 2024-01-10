@@ -46,12 +46,12 @@ public class StepDefinition extends TestBase{
 		  switch(loginData) { 
 		  
 		  case "username":
-			  loginPage.enterUserName(databasePage.getDataFromDatabase("user_name"));
+			  loginPage.enterUserName(databasePage.getDataFromDatabase("user_name","SELECT * FROM login_data WHERE user_id=1;"));
 //			  System.out.println("Username from DB: " +databasePage.getDataFromDatabase("user_name"));
 			  	  break;
 		  
 		  case "password":
-			  loginPage.enterPassword(databasePage.getDataFromDatabase("user_password"));
+			  loginPage.enterPassword(databasePage.getDataFromDatabase("user_password","SELECT * FROM login_data WHERE user_id=1;"));
 //			  System.out.println("Password from DB: " + databasePage.getDataFromDatabase("user_password") );
 		  		  break;
 		  
@@ -119,7 +119,10 @@ public class StepDefinition extends TestBase{
 	@Then("User should be able to add new account")
 	public void user_should_be_able_to_add_new_account() {
 		
-		listAccountPage.searchForNameAndAccount();
+	
+	String number =databasePage.getDataFromDatabase("account_number", 
+			"SELECT * FROM tbl_accounts WHERE account_number ="+listAccountPage.searchForNameAndAccount()+";");
+	System.out.println("Account "+number+"exist in Database");
 	}
 
 	
