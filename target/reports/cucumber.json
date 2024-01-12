@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1879912100,
+              "duration": 1737335200,
               "status": "passed"
             },
             "line": 5,
@@ -23,7 +23,7 @@
           },
           {
             "result": {
-              "duration": 580198800,
+              "duration": 631707400,
               "status": "passed"
             },
             "line": 6,
@@ -41,7 +41,7 @@
           },
           {
             "result": {
-              "duration": 423439700,
+              "duration": 502584500,
               "status": "passed"
             },
             "line": 7,
@@ -59,7 +59,7 @@
           },
           {
             "result": {
-              "duration": 8274567900,
+              "duration": 8179495600,
               "status": "passed"
             },
             "line": 8,
@@ -71,7 +71,7 @@
           },
           {
             "result": {
-              "duration": 239896200,
+              "duration": 243325300,
               "status": "passed"
             },
             "line": 9,
@@ -84,11 +84,11 @@
         ]
       },
       {
-        "start_timestamp": "2024-01-10T22:54:28.554Z",
+        "start_timestamp": "2024-01-12T20:10:07.550Z",
         "before": [
           {
             "result": {
-              "duration": 1083782500,
+              "duration": 1190865900,
               "status": "passed"
             },
             "match": {
@@ -103,7 +103,7 @@
         "after": [
           {
             "result": {
-              "duration": 120100200,
+              "duration": 125802800,
               "status": "passed"
             },
             "match": {
@@ -116,7 +116,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1688750100,
+              "duration": 1696597200,
               "status": "passed"
             },
             "line": 14,
@@ -128,7 +128,7 @@
           },
           {
             "result": {
-              "duration": 68395800,
+              "duration": 64548300,
               "status": "passed"
             },
             "line": 15,
@@ -140,7 +140,7 @@
           },
           {
             "result": {
-              "duration": 40215600,
+              "duration": 41526900,
               "status": "passed"
             },
             "line": 16,
@@ -152,7 +152,7 @@
           },
           {
             "result": {
-              "duration": 577813200,
+              "duration": 577059900,
               "status": "passed"
             },
             "line": 17,
@@ -164,7 +164,7 @@
           },
           {
             "result": {
-              "duration": 301299200,
+              "duration": 278266900,
               "status": "passed"
             },
             "line": 18,
@@ -176,7 +176,7 @@
           },
           {
             "result": {
-              "duration": 2054018000,
+              "duration": 892029400,
               "status": "passed"
             },
             "line": 19,
@@ -188,7 +188,19 @@
           },
           {
             "result": {
-              "duration": 488426200,
+              "duration": 36743800,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "User should be able to land on List Account page",
+            "match": {
+              "location": "steps.StepDefinition.user_should_be_able_to_land_on_List_Account_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 9576745100,
               "status": "passed"
             },
             "line": 21,

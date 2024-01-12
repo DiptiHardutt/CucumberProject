@@ -30,6 +30,7 @@ public class ListAccountPage extends TestBase{
 	@FindBy(xpath="//strong[text()='Account List']") WebElement accountListDashboardPage;
 	@FindBy(css="#accountModalLabel") WebElement newAccountWindow;
 	@FindBy(css="a[id='yesBtn']") WebElement yesButton;
+	@FindBy(css="#toast-container") WebElement toastMsg;
 	
 		
 	
@@ -69,12 +70,10 @@ public class ListAccountPage extends TestBase{
 	}
 	public void clickOnSaveButton() {
 		saveButton.click();
-		try {
-			Thread.sleep(2000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		waitForElement(toastMsg);
+	System.out.println(toastMsg.isDisplayed());	
+	String actualText = toastMsg.getText();
+	
 	}
 	//table/tbody/tr[1]/td[2]
 	//table/tbody/tr[1]//button[1]

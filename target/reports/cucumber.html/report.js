@@ -141,6 +141,16 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
+  "name": "User should be able to land on List Account page",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "steps.StepDefinition.user_should_be_able_to_land_on_List_Account_page()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
   "name": "User should be able to add new account",
   "keyword": "Then "
 });

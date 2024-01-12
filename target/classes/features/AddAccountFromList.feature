@@ -17,6 +17,6 @@ Background:
    Then User should be able to navigate to New Account window
    When User fill all the required information
    And User clicks on the save button
-   
+   Then User should be able to land on List Account page
    Then User should be able to add new account
     
