@@ -73,6 +73,7 @@ public class ListAccountPage extends TestBase{
 		waitForElement(toastMsg);
 	System.out.println(toastMsg.isDisplayed());	
 	String actualText = toastMsg.getText();
+
 	
 	}
 	//table/tbody/tr[1]/td[2]
@@ -86,6 +87,12 @@ public class ListAccountPage extends TestBase{
 //		System.out.println("In search for name and account");
 		int size = tableRows.size();
 		for(int i=1;i<size;i++) {
+			try {
+				Thread.sleep(1000);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 			String actualNameXpath = beforeXpath + i + afterXpath;
 //			WebElement name = driver.findElement(By.xpath(beforeXpath+i+afterXpath));
 //			System.out.println(name);
