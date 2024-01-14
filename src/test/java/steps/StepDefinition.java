@@ -8,7 +8,6 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import junit.framework.Assert;
 import pages.DatabasePage;
 import pages.ListAccountPage;
 import pages.LoginPage;
@@ -78,7 +77,8 @@ public class StepDefinition extends TestBase{
 	   String expectedTitle = "Codefios QA";
 	   String actualTitle = loginPage.getPageTitle();
 	   takesScreenshot(driver);
-	   Assert.assertEquals("Page Title is not matching",expectedTitle, actualTitle);
+	   validateElement("Page Title is not matching",expectedTitle, actualTitle);
+	  
 	}
 	@When("User clicks on List Account button")
 	public void user_clicks_on_List_Account_button() {
