@@ -54,7 +54,8 @@ public class TestBase {
 	 public void validateElement(String msg,String expected, String actual) {
 		 Assert.assertEquals(msg, expected, actual);
 	 }
-	 
+	 	 
+	 //Explicit wait 
 	 public void waitForElement(WebElement element) {
 		 WebDriverWait wait = new WebDriverWait(driver,20);
 		 wait.until(ExpectedConditions.visibilityOf(element));

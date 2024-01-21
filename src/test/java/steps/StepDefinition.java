@@ -102,15 +102,41 @@ public class StepDefinition extends TestBase{
 		listAccountPage.newAccountAssertion(expected);
 	}
 
-	@Then("User fill all the required information")
-	public void user_fill_all_the_required_information() {
-		listAccountPage.insertAccountName("test");
-		listAccountPage.insertDescription("test Description");
-		listAccountPage.insertBalance("124");
-		listAccountPage.insertAccountNumber("26734");
-		listAccountPage.insertContactPerson("test person");
-	}
+	/*
+	 * @Then("User fill all the required information") public void
+	 * user_fill_all_the_required_information() {
+	 * listAccountPage.insertAccountName("test");
+	 * listAccountPage.insertDescription("test Description");
+	 * listAccountPage.insertBalance("124");
+	 * listAccountPage.insertAccountNumber("26734");
+	 * listAccountPage.insertContactPerson("test person"); }
+	 */
 
+	@Then("User fill the AccountName as {string}")
+		public void user_fill_the_AccountName_as(String accountName) {
+		listAccountPage.insertAccountName(accountName);
+	}
+	
+	@Then("User fill the Description as {string}")
+	public void user_fill_the_Description_as(String description) {
+		listAccountPage.insertDescription(description);
+	}
+	
+	@Then("User fill the Balance as {string}")
+	public void user_fill_the_Balance_as(String balance) {
+		listAccountPage.insertBalance(balance);
+	}
+	
+	@Then("User fill the AccountNumber as {string}")
+	public void user_fill_the_AccountNumber_as(String accountNumber) {
+		listAccountPage.insertAccountNumber(accountNumber);
+	}
+	
+	@Then("User fill the ContactPerson as {string}")
+	public void user_fill_the_ContactPerson_as(String contactPerson) {
+		listAccountPage.insertContactPerson(contactPerson);
+	}
+	
 	@Then("User clicks on the save button")
 	public void user_clicks_on_the_save_button() {
 		listAccountPage.clickOnSaveButton();
